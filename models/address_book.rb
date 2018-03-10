@@ -52,4 +52,12 @@ require "csv"
      # #5
      return nil
    end
+   def interation_search(name)
+     @entries.each do |entry|
+       if entry.name == name
+         return entry
+       end
+     end
+     return nil
+   end
  end
